@@ -15,7 +15,7 @@ from plone.testing import z2
 import unittest2 as unittest
 
 
-class SngSiteThemeLayer(PloneSandboxLayer):
+class sngSiteThemeLayer(PloneSandboxLayer):
 
     defaultBases = (PLONE_FIXTURE,)
 
@@ -46,11 +46,11 @@ class SngSiteThemeLayer(PloneSandboxLayer):
         z2.uninstallProduct(app, 'sng.sitetheme')
 
 
-FIXTURE = SngBuildoutLayer()
+FIXTURE = sngBuildoutLayer()
 INTEGRATION_TESTING = IntegrationTesting(
-    bases=(FIXTURE,), name="SngBuildoutLayer:Integration")
+    bases=(FIXTURE,), name="sngBuildoutLayer:Integration")
 FUNCTIONAL_TESTING = FunctionalTesting(
-    bases=(FIXTURE,), name="SngBuildoutLayer:Functional")
+    bases=(FIXTURE,), name="sngBuildoutLayer:Functional")
 
 
 class IntegrationTestCase(unittest.TestCase):

@@ -1,0 +1,2 @@
+graft sng
+include *.cfg *.rst *.in

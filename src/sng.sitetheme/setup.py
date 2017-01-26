@@ -18,14 +18,14 @@ long_description = \
 setup(
     name='sng.sitetheme',
     version='1.0.0',
-    description="Sing Plone 5 Website",
+    description="sng Records Website",
     long_description=long_description,
     # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         "Framework :: Plone",
         "Programming Language :: Python",
     ],
-    keywords='Sing Plone Kreativkombinat',
+    keywords='plone frazi',
     author='Serge Davidov',
     author_email='sd@ade25.de',
     url='http://pypi.python.org/pypi/sng.buildout',
