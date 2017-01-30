@@ -99,6 +99,11 @@
         </replace>
         <replace css:theme-children="#app-pathbar" css:content="#portal-breadcrumbs" />
 
+        <!-- News -->
+        <replace css:content-children="#app-news-list"
+            css:theme-children="#app-news-list-frontpage" />
+
+
         <!-- Login form rules -->
         <replace css:content-children="#content-core"
                  css:theme-children="#app-signin-content"

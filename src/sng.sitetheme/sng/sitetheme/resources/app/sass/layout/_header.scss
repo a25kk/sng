@@ -4,7 +4,6 @@
 
 
 .app-header {
-    border-top: 10px solid #333;
     @include media-breakpoint-up(md) {
         margin-bottom: 1rem;
     }
