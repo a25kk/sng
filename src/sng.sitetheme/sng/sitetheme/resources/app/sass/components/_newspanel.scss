@@ -6,18 +6,30 @@
 .app-news-panel-wrapper {
     @include make-container();
     @include make-container-max-widths();
+
 }
 
 // News listing
 .app-news-list {
     @include make-row();
-    padding: $spacer;
+    //padding: $spacer;
+    //border: 1px solid red;
+    //margin-left: -1rem;
+    //margin-right: -1rem;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .app-news-list-item {
     margin-bottom: $spacer;
 	@include media-breakpoint-up(sm) {
-        @include make-col(4);
+        //@include make-col(4);
+        float: left;
+        max-width: 33%;
         padding: 1rem;
 	}
 
@@ -50,9 +62,11 @@
 }
 
 .app-news-list-item-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
+    margin-top: 1rem;
     margin-bottom: 1rem;
+    text-transform: uppercase;
     //a {
     //    color: #fff;
     //}

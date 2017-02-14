@@ -10,7 +10,7 @@
     color: $app-gray;
     font-size: $font-size-sm;
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .app-footer-cards {
@@ -23,7 +23,7 @@
 .app-footer-header {
     margin-bottom: 1rem;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
@@ -55,7 +55,7 @@
     padding: 2rem 1rem;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: .8rem;
     @include media-breakpoint-up(md) {
         text-align: left;
     }

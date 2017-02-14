@@ -6,6 +6,11 @@
 .app-header {
     @include media-breakpoint-up(md) {
         margin-bottom: 1rem;
+        //position: fixed;
+        //top: 0;
+        //left: 0;
+        //background: #fff;
+        //z-index: 100000;
     }
 }
 
