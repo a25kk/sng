@@ -8,7 +8,7 @@ from zope.interface import implementer
 from zope.interface import provider
 from zope import schema
 
-from sng.sitecontent import _
+from sng.sitecontent import MessageFactory as _
 
 
 @provider(IFormFieldProvider)

@@ -103,6 +103,9 @@
         <replace css:content-children="#app-news-list"
             css:theme-children="#app-news-list-frontpage" />
 
+        <prepend css:content-children="#front-page-teasers"
+                 css:theme="#app-news-list-frontpage" />
+
 
         <!-- Login form rules -->
         <replace css:content-children="#content-core"

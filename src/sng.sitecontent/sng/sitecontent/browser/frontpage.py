@@ -9,6 +9,7 @@ from plone.app.contenttypes.interfaces import INewsItem
 from zope.component import getMultiAdapter
 from zope.component import getUtility
 
+from sng.sitecontent.contentpage import IContentPage
 from sng.sitecontent.interfaces import IResponsiveImagesTool
 
 IMG = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs='
@@ -26,10 +27,24 @@ class FrontPageView(BrowserView):
 
     def __call__(self):
         self.has_newsitems = len(self.recent_news()) > 0
+        self.has_preview_cards = len(self.preview_cards()) > 0
         return self.render()
 
     def render(self):
         return self.index()
+
+    def preview_cards(self):
+        portal = api.portal.get()
+        news_folder = portal['news']
+        items = api.content.find(
+            context=news_folder,
+            depth=2,
+            object_provides=IContentPage.__identifier__,
+            review_state='published',
+            sort_on='Date',
+            sort_order='reverse',
+            sort_limit=10)
+        return items
 
     def can_edit(self):
         show = False

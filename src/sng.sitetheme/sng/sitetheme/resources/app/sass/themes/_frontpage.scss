@@ -4,6 +4,38 @@
 	padding: 0;
 }
 
+
+//== Teaser box component
+// Front page teasers aligned in a pseudo random order
+.teaser-box {
+    float: left;
+    width: 100%;
+    padding: 1rem;
+}
+//## Element sizing
+// Editable sizes based on display behavior
+.teaser-box--75 {
+    width: 75%;
+}
+.teaser-box--66 {
+    width: 66.6666%;
+}
+.teaser-box--50 {
+    width: 50%;
+}
+.teaser-box--33 {
+    width: 33.3333%;
+}
+.teaser-box--25 {
+    width: 25%;
+}
+
+// Teaser title
+.teaser-box__title {
+    text-transform: uppercase;
+}
+
+
 .app-intro {
 	@include make-row();
 	@include media-breakpoint-up(xl) {

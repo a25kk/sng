@@ -15,5 +15,13 @@
     for="plone.dexterity.interfaces.IDexterityContent"
     marker=".gallery.IGalleryEnabled"
     />
+  <plone:behavior
+          title="Display Size Options"
+          description="Adds a selection for element display sizes"
+          provides=".display_options.IDisplayOptions"
+          factory=".display_options.DisplayOptions"
+          for="plone.dexterity.interfaces.IDexterityContent"
+          marker=".display_options.IDisplayOptions"
+  />
 
 </configure>

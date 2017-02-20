@@ -3,7 +3,7 @@
 
 from zope.i18nmessageid import MessageFactory
 
-_ = MessageFactory('sng.sitecontent')
+MessageFactory = MessageFactory('sng.sitecontent')
 
 
 def initialize(context):
