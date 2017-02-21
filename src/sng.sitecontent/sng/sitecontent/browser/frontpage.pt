@@ -29,7 +29,7 @@
                                 tal:attributes="class python:item_size and 'app-teaser-box teaser-box teaser-box--' + item_size or 'app-teaser-box teaser-box'">
                                 <div class="teaser-box__aside"
                                          tal:define="item_obj item/getObject">
-                                    <a class="teaser-box__link" href="${item/absolute_url}">
+                                    <a class="teaser-box__link" href="${item/getURL}">
                                         <tal:image tal:condition="item_obj/image">
                                             <figure class="app-page-image-container"
                                                      tal:define="item_uuid item/UID;
