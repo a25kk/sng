@@ -19836,6 +19836,11 @@ body.template-frontpage-view .app-pathbar
     }
 }
 
+.teaser-box__header
+{
+    margin-top: 1rem;
+}
+
 .teaser-box__title
 {
     text-transform: uppercase;
