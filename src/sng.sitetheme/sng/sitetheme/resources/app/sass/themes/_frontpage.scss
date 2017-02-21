@@ -15,34 +15,29 @@
 //## Element sizing
 // Editable sizes based on display behavior
 .teaser-box--75 {
-	width: 100%;
 	@include media-breakpoint-up(md) {
 		width: 75%;
-	}  
+	}
 }
 .teaser-box--66 {
-	width: 100%;
 	@include media-breakpoint-up(md) {
 		width: 66.6666%;
-	}   
+	}
 }
 .teaser-box--50 {
-    width: 100%;
     @include media-breakpoint-up(md) {
 		width: 50%;
-	}  
+	}
 }
 .teaser-box--33 {
-    width: 100%;
     @include media-breakpoint-up(md) {
 		width: 33.3333%;
-	}  
+	}
 }
 .teaser-box--25 {
-    width: 100%;
     @include media-breakpoint-up(md) {
 		width: 25%;
-	}  
+	}
 }
 
 // Teaser title
