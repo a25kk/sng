@@ -36,22 +36,17 @@
               </li>
             </tal:tabs>
             <li class="app-navitem">
-              <a class="app-navitem-tab" href="https://www.facebook.com/sngrecords/">
+              <a class="app-navitem-tab" href="https://www.facebook.com/thomas.sing">
                 <i class="ion ion-logo-facebook" aria-hidden="true"></i>
               </a>
             </li>
             <li class="app-navitem">
-              <a class="app-navitem-tab" href="https://twitter.com/sngrecords">
+              <a class="app-navitem-tab" href="https://twitter.com/thomassing">
                 <i class="ion ion-logo-twitter"></i>
               </a>
             </li>
             <li class="app-navitem">
-              <a class="app-navitem-tab" href="https://soundcloud.com/sng-records">
-                <i class="ion ion-md-cloud"></i>
-              </a>
-            </li>
-            <li class="app-navitem">
-              <a class="app-navitem-tab" href="https://www.instagram.com/sngrecords/">
+              <a class="app-navitem-tab" href="https://www.instagram.com/thomassing_/">
                 <i class="ion ion-logo-instagram"></i>
               </a>
             </li>
