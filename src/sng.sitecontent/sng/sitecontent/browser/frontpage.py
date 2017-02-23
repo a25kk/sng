@@ -37,7 +37,7 @@ class FrontPageView(BrowserView):
         portal = api.portal.get()
         news_folder = portal['news']
         items = api.content.find(
-            context=news_folder,
+            path='/'.join(news_folder.getPhysicalPath()),
             depth=2,
             object_provides=IContentPage.__identifier__,
             review_state='published',
