@@ -27,16 +27,16 @@ if ($bannerBar.length) {
     });
 }
 // Content image galleries
-if ($galleryContainer.length) {
-    var flkty = new Flickity('.js-gallery', {
-        autoPlay: true,
-        contain: true,
-        wrapAround: true,
-        imagesLoaded: true,
-        cellSelector: '.app-gallery-cell',
-        cellAlign: 'left'
-    });
-}
+//if ($galleryContainer.length) {
+//    var flkty = new Flickity('.js-gallery', {
+//        autoPlay: true,
+//        contain: true,
+//        wrapAround: true,
+//        imagesLoaded: true,
+//        cellSelector: '.app-gallery-cell',
+//        cellAlign: 'left'
+//    });
+//}
 // Anonymous only scripts (mainly used in login views)
 if ($(".userrole-anonymous")[0]) {
     // Show password by default

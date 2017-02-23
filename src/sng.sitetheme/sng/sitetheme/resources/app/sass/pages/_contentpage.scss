@@ -1,9 +1,11 @@
 .app-page {
   @include make-container();
   @include make-container-max-widths();
-    padding: 1rem;
+    padding-right: 0;
+    padding-left: 0;
     @include media-breakpoint-up(sm) {
         margin-bottom: 1rem;
+        padding: 1rem;
     }
     h1, h2, h3, h4, h5 {
       text-transform: uppercase;
@@ -185,4 +187,7 @@
 
 .project-gallery-item {
   margin-bottom: 1rem;
+  img {
+    width: 100%;
+  }
 }

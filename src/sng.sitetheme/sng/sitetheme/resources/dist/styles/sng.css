@@ -17417,7 +17417,7 @@ body.template-frontpage-view .app-pathbar
     font-size: 1rem; 
     font-weight: 500;
 
-    margin: 1rem 2rem 0 2rem;
+    margin: 1rem;
 
     text-transform: uppercase;
 }
@@ -18421,109 +18421,6 @@ body.template-frontpage-view .app-pathbar
     fill: #fff;
 }
 
-.app-gallery
-{
-    overflow: hidden;
-
-    height: 210px;
-    margin-bottom: 1rem;
-}
-@media (min-width: 768px)
-{
-    .app-gallery
-    {
-        height: 340px;
-    }
-}
-@media (min-width: 992px)
-{
-    .app-gallery
-    {
-        height: 592px;
-    }
-}
-.app-gallery .flickity-page-dots
-{
-    display: none;
-}
-
-.project-gallery
-{
-    position: relative;
-}
-
-.app-gallery-caption
-{
-    width: 100%;
-}
-@media (min-width: 576px)
-{
-    .app-gallery-caption
-    {
-        position: absolute;
-        z-index: 1001;
-        top: 2rem;
-        left: 4rem;
-
-        width: 35%;
-        padding: 4rem 2rem 2rem 2rem;
-
-        background: #999;
-    }
-}
-
-.app-gallery-cell
-{
-    overflow: hidden; 
-
-    width: 100%;
-    height: 210px;
-}
-@media (min-width: 768px)
-{
-    .app-gallery-cell
-    {
-        height: 340px;
-    }
-}
-@media (min-width: 992px)
-{
-    .app-gallery-cell
-    {
-        height: 592px;
-    }
-}
-.app-gallery-cell img
-{
-    width: 100%;
-}
-
-/* ---- flickity overrides ---- */
-.flickity-prev-next-button
-{
-    background: transparent;
-}
-
-.flickity-prev-next-button .arrow
-{
-    fill: #fff;
-}
-
-.flickity-prev-next-button:hover
-{
-    background: none;
-}
-
-.flickity-page-dots
-{
-    bottom: 20px !important;
-}
-
-.flickity-page-dots .dot
-{
-    background: #fff;
-}
-
 .app-news-panel-wrapper
 {
     position: relative;
@@ -18908,9 +18805,10 @@ body.template-frontpage-view .app-pathbar
 
     margin-right: auto;
     margin-left: auto;
-    padding: 1rem; 
     padding-right: 15px;
+    padding-right: 0;
     padding-left: 15px;
+    padding-left: 0;
 }
 @media (min-width: 576px)
 {
@@ -18981,6 +18879,7 @@ body.template-frontpage-view .app-pathbar
     .app-page
     {
         margin-bottom: 1rem;
+        padding: 1rem;
     }
 }
 .app-page h1,
@@ -19287,6 +19186,10 @@ body.template-frontpage-view .app-pathbar
 .project-gallery-item
 {
     margin-bottom: 1rem;
+}
+.project-gallery-item img
+{
+    width: 100%;
 }
 
 .newsImage

@@ -20199,14 +20199,14 @@ return Flickity;
           cellAlign: 'left',
           autoPlay: 7500
         });
-        var flkty = new Flickity('.main-gallery', {
-          autoPlay: true,
-          contain: true,
-          wrapAround: true,
-          imagesLoaded: true,
-          cellSelector: '.app-gallery-cell',
-          cellAlign: 'left'
-        });
+        //var flkty = new Flickity('.main-gallery', {
+        //  autoPlay: true,
+        //  contain: true,
+        //  wrapAround: true,
+        //  imagesLoaded: true,
+        //  cellSelector: '.app-gallery-cell',
+        //  cellAlign: 'left'
+        //});
         var $isoContainer = $('#js-isotope-container');
         $isoContainer.addClass('js-isotope-intialized');
         $isoContainer.isotope({
