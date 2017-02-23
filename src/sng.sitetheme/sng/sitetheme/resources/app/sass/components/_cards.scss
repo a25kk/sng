@@ -42,18 +42,7 @@
             @include make-col(6);
         }
         @include media-breakpoint-up(lg) {
-            @include make-col(3);
-            // flex-shrink: 1;
-        }
-    }
-
-    @include when-inside('.section-releases') {
-        @include make-col(12);
-        @include media-breakpoint-up(sm) {
             @include make-col(6);
-        }
-        @include media-breakpoint-up(lg) {
-            @include make-col(4);
             // flex-shrink: 1;
         }
     }
