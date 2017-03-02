@@ -16001,6 +16001,10 @@ http://flickity.metafizzy.co
     transition-delay: 1.8s;
 }
 
+body
+{
+    margin: 0;
+}
 .app-fonts-loaded body
 {
     font-weight: 300;
@@ -16061,82 +16065,20 @@ a:hover
 {
     .app-header
     {
-        margin-bottom: 1rem;
+        position: fixed;
+        z-index: 100000; 
+        top: 0;
+        left: 0;
+
+        padding: 1rem;
+
+        background: #fff;
     }
 }
 
 .app-header-content
 {
-    position: relative;
-
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-@media (min-width: 576px)
-{
-    .app-header-content
-    {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-}
-@media (min-width: 768px)
-{
-    .app-header-content
-    {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-}
-@media (min-width: 992px)
-{
-    .app-header-content
-    {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-}
-@media (min-width: 1200px)
-{
-    .app-header-content
-    {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-}
-@media (min-width: 576px)
-{
-    .app-header-content
-    {
-        width: 540px;
-        max-width: 100%;
-    }
-}
-@media (min-width: 768px)
-{
-    .app-header-content
-    {
-        width: 720px;
-        max-width: 100%;
-    }
-}
-@media (min-width: 992px)
-{
-    .app-header-content
-    {
-        width: 960px;
-        max-width: 100%;
-    }
-}
-@media (min-width: 1200px)
-{
-    .app-header-content
-    {
-        width: 1140px;
-        max-width: 100%;
-    }
+    width: 100%;
 }
 
 .app-header-panels
@@ -16254,9 +16196,10 @@ a:hover
 
     position: relative;
 
-    margin: z; 
+    margin: 0;
     margin-right: auto;
     margin-left: auto;
+    padding: 0; 
     padding-right: 15px;
     padding-right: 0;
     padding-left: 15px;
@@ -16324,20 +16267,6 @@ a:hover
     {
         width: 1140px;
         max-width: 100%;
-    }
-}
-@media (min-width: 576px)
-{
-    .app-navbar
-    {
-        margin-top: 2rem;
-    }
-}
-@media (min-width: 1200px)
-{
-    .app-navbar
-    {
-        margin-top: 1.5rem;
     }
 }
 
@@ -16433,18 +16362,18 @@ a:hover
 {
     display: -ms-flexbox;
     display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
 
     margin-bottom: 0;
     padding: 1rem;
 
     list-style: none; 
 
-    -ms-flex-direction: row;
+    -ms-flex-direction: row-reverse;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
+    -ms-flex-align: right;
+    align-items: right;
 }
 @media (min-width: 576px)
 {
@@ -16454,14 +16383,6 @@ a:hover
 
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
-    }
-}
-@media (min-width: 768px)
-{
-    .app-navbar-nav
-    {
-        -ms-flex-pack: justify;
-        justify-content: space-between;
     }
 }
 
@@ -17414,29 +17335,14 @@ body.template-frontpage-view .app-pathbar
 
 .app-brandname-logo
 {
-    font-size: 1rem; 
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 700;
 
-    margin: 1rem;
+    margin: 0 0 0 1rem;
 
     text-transform: uppercase;
-}
-@media (min-width: 576px)
-{
-    .app-brandname-logo
-    {
-        margin: 2rem 2rem 0 1rem;
-    }
-}
 
-.app-orange
-{
-    color: black;
-}
-
-.app-signin-header-content path
-{
-    fill: #000;
+    color: #000;
 }
 
 .app-brandname
@@ -17447,7 +17353,7 @@ body.template-frontpage-view .app-pathbar
 
     display: block;
 
-    padding: 1rem;
+    padding: 1rem 0 0 1rem;
 
     text-transform: uppercase; 
 
@@ -18397,6 +18303,7 @@ body.template-frontpage-view .app-pathbar
 {
     position: relative;
 
+    margin-top: 10rem; 
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
@@ -19432,6 +19339,7 @@ body.template-frontpage-view .app-pathbar
 {
     position: relative;
 
+    margin-top: 10rem; 
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;

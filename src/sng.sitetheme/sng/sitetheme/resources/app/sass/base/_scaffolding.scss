@@ -5,6 +5,7 @@
 
 //** Adjust font weight for initialized webfonts
 body {
+    margin: 0;
     @include when-inside('.app-fonts-loaded') {
         font-weight: 300;
     }

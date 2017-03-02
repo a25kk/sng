@@ -6,6 +6,7 @@
 .app-news-panel-wrapper {
     @include make-container();
     @include make-container-max-widths();
+    margin-top: 10rem;
 
 }
 

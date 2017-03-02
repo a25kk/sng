@@ -35,21 +35,6 @@
                   </a>
               </li>
             </tal:tabs>
-            <li class="app-navitem">
-              <a class="app-navitem-tab" href="https://www.facebook.com/thomas.sing">
-                <i class="ion ion-logo-facebook" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li class="app-navitem">
-              <a class="app-navitem-tab" href="https://twitter.com/thomassing">
-                <i class="ion ion-logo-twitter"></i>
-              </a>
-            </li>
-            <li class="app-navitem">
-              <a class="app-navitem-tab" href="https://www.instagram.com/thomassing_/">
-                <i class="ion ion-logo-instagram"></i>
-              </a>
-            </li>
         </ul>
       </div>
     </div>

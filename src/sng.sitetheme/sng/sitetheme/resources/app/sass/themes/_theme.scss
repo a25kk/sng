@@ -8,6 +8,7 @@
 //## Provides optional fullscreen layouts
 .app-main {
   @include make-container();
+  margin-top: 10rem;
   &-fullscreen {
     display: flex;
     align-items: center;

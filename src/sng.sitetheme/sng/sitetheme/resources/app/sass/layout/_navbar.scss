@@ -9,13 +9,14 @@
     line-height: ($spacer / 2);
     padding-left: 0;
     padding-right: 0;
-    margin: z;
-    @include media-breakpoint-up(sm) {
-        margin-top: 2rem;
-    }
-    @include media-breakpoint-up(xl) {
-        margin-top: 1.5rem;
-    }
+    margin: 0;
+    padding: 0;
+    //@include media-breakpoint-up(sm) {
+    //    margin-top: 2rem;
+    //}
+    //@include media-breakpoint-up(xl) {
+    //    margin-top: 1.5rem;
+    //}
 }
 
 .app-navbar-brand {
@@ -97,9 +98,9 @@
 .app-navbar-nav {
     @extend .nav;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: right;
     margin-bottom: 0;
     padding: 1rem;
     list-style: none;
@@ -109,7 +110,7 @@
     }
     @extend .clearfix;
     @include media-breakpoint-up(md) {
-        justify-content: space-between;
+        //justify-content: space-between;
     }
 }
 
