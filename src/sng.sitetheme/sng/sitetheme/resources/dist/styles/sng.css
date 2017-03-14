@@ -16066,13 +16066,17 @@ a:hover
     .app-header
     {
         position: fixed;
-        z-index: 100000; 
+        z-index: 1; 
         top: 0;
         left: 0;
 
         padding: 1rem;
 
         background: #fff;
+    }
+    .plone-toolbar-top .app-header
+    {
+        margin-top: 50px;
     }
 }
 
@@ -16479,12 +16483,12 @@ a:hover
 .app-footer-content
 {
     font-size: .875rem;
-    font-size: 1rem; 
+    font-size: 1rem;
     font-weight: 300;
 
+    margin: 0 auto; 
+
     color: #666;
-    background: url(../assets/img/footer.jpg) no-repeat 0 50%;
-    background-size: cover;
 }
 
 .app-footer-cards
