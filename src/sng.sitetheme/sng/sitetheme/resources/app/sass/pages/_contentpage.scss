@@ -29,9 +29,8 @@
 
 .app-page-headline,
 .app-page-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+  font-size: 12px;
+  font-weight: 500;
   margin-top: 1rem;
   text-transform: uppercase;
   color: #000 !important;
@@ -40,13 +39,13 @@
   }
 
   @include media-breakpoint-up(lg) {
-    font-size: 1rem;
+    font-size: 12px;
     margin-top: 0rem;
   }
 }
 
 .app-page-abstract {
-  font-size: 1rem;
+  font-size: 12px;
   color: $app-primary !important;
 }
 
@@ -62,6 +61,7 @@
 }
 
 .app-page-text {
+  font-family: 'Lekton';
   max-width: 800px;
   margin: 0 auto;
   ul {
@@ -81,6 +81,18 @@
   }
   h2 {
     margin-top: 2rem;
+  }
+}
+
+
+.entries {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.entry {
+  .image-tile {
+    display: none;
   }
 }
 

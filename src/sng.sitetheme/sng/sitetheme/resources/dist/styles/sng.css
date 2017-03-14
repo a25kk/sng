@@ -5751,7 +5751,7 @@ html
 
 body
 {
-    font-family: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Arial', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-size: 1rem;
     font-weight: normal;
     line-height: 1.5;
@@ -16042,6 +16042,10 @@ a:hover
     color: #999;
 }
 
+.app-header
+{
+    padding: 10px;
+}
 @media (min-width: 768px)
 {
     .app-header
@@ -16050,8 +16054,6 @@ a:hover
         z-index: 1; 
         top: 0;
         left: 0;
-
-        padding: 1rem;
 
         background: #fff;
     }
@@ -16072,7 +16074,9 @@ a:hover
     display: flex;
 
     margin-right: -15px;
+    margin-right: 0 !important;
     margin-left: -15px;
+    margin-left: 0 !important;
 
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -16186,9 +16190,9 @@ a:hover
     margin-left: auto;
     padding: 0; 
     padding-right: 15px;
-    padding-right: 0;
+    padding-right: 0 !important;
     padding-left: 15px;
-    padding-left: 0;
+    padding-left: 0 !important;
 }
 @media (min-width: 576px)
 {
@@ -16331,11 +16335,10 @@ a:hover
     font-size: 1.25rem;
     line-height: 1;
 
-    padding: .5rem .75rem;
+    padding: 0;
 
-    color: black;
-    border: 1px solid transparent; 
-    background: none;
+    color: black; 
+    background: transparent;
 }
 .navbar-toggler:focus,
 .navbar-toggler:hover
@@ -16350,7 +16353,6 @@ a:hover
         flex-direction: row-reverse;
 
     margin-bottom: 0;
-    padding: 1rem;
 
     list-style: none; 
 
@@ -16386,8 +16388,8 @@ a:hover
 {
     .app-navitem
     {
-        padding-right: .8rem; 
-        padding-left: .8rem;
+        padding-right: 0; 
+        padding-left: 0;
 
         background: transparent;
     }
@@ -16406,7 +16408,7 @@ a:hover
 
 .app-navitem-tab
 {
-    font-size: 1rem; 
+    font-size: 12px; 
     font-weight: 300;
     line-height: 1;
 
@@ -16423,7 +16425,7 @@ a:hover
 {
     .app-navitem-tab
     {
-        font-size: 1rem;
+        font-size: 12px;
     }
 }
 .app-navitem-tab:hover
@@ -16456,29 +16458,14 @@ a:hover
     background-color: transparent;
 }
 
-.app-footer
-{
-    margin-top: 1rem;
-}
-
 .app-footer-content
 {
-    font-size: .875rem;
-    font-size: 1rem;
+    font-size: 12px;
     font-weight: 300;
 
     margin: 0 auto; 
 
-    color: #666;
-}
-
-.app-footer-link
-{
-    color: #fff;
-}
-.app-footer-link:hover
-{
-    color: #eee;
+    color: #000;
 }
 
 .app-copyright
@@ -16486,7 +16473,7 @@ a:hover
     font-size: .8rem;
     font-weight: 300;
 
-    padding: 2rem 1rem;
+    padding: 12px;
 
     text-align: center; 
     text-transform: uppercase;
@@ -16714,7 +16701,7 @@ label
 
 .plone-toolbar-nav
 {
-    font-family: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Arial', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-size: 12px;
 
     margin: 0;
@@ -16778,7 +16765,7 @@ label
 
 .plone-toolbar-subnav
 {
-    font-family: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Arial', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-size: 14px;
     line-height: 30px;
 
@@ -17278,59 +17265,37 @@ body.template-frontpage-view .app-pathbar
 
 .app-brandname-logo
 {
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 500;
 
-    margin: 0 0 0 1rem;
+    margin: 0;
 
     text-transform: uppercase;
 
     color: #000;
 }
+@media (min-width: 576px)
+{
+    .app-brandname-logo
+    {
+        margin: 0;
+    }
+}
 
 .app-brandname
 {
-    font-size: .8rem;
+    font-size: 12px;
     font-weight: 100;
     line-height: 1.25;
 
     display: block;
 
-    padding: 1rem 0 0 1rem;
+    margin-top: 5px;
+    padding: 0;
 
     text-transform: uppercase; 
 
     color: #999;
-}
-.app-brand-panel .app-brandname
-{
-    margin-top: -1rem; 
-
-    -ms-flex: 1;
-        flex: 1;
-}
-@media (min-width: 768px)
-{
-    .app-brand-panel .app-brandname
-    {
-        -ms-flex: 0 0 66.6666%;
-            flex: 0 0 66.6666%;
-    }
-}
-.app-brand-panel-inverse .app-brandname
-{
-    font-size: 1.25rem;
-    line-height: 1;
-
-    color: #fff;
-}
-@media (min-width: 768px)
-{
-    .app-brand-panel-inverse .app-brandname
-    {
-        -ms-flex: 0 0 75%;
-            flex: 0 0 75%;
-    }
 }
 
 .app-brand-aside
@@ -18246,7 +18211,7 @@ body.template-frontpage-view .app-pathbar
 {
     position: relative;
 
-    margin-top: 10rem; 
+    margin-top: 0;
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
@@ -18314,6 +18279,13 @@ body.template-frontpage-view .app-pathbar
     {
         width: 1140px;
         max-width: 100%;
+    }
+}
+@media (min-width: 576px)
+{
+    .app-news-panel-wrapper
+    {
+        margin-top: 5rem;
     }
 }
 
@@ -18667,11 +18639,10 @@ body.template-frontpage-view .app-pathbar
 .app-page-headline,
 .app-page-title
 {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 500;
 
     margin-top: 1rem;
-    margin-bottom: 1rem;
 
     text-transform: uppercase;
 
@@ -18690,7 +18661,7 @@ body.template-frontpage-view .app-pathbar
     .app-page-headline,
     .app-page-title
     {
-        font-size: 1rem;
+        font-size: 12px;
 
         margin-top: 0rem;
     }
@@ -18698,7 +18669,7 @@ body.template-frontpage-view .app-pathbar
 
 .app-page-abstract
 {
-    font-size: 1rem;
+    font-size: 12px;
 
     color: #999 !important;
 }
@@ -18715,6 +18686,8 @@ body.template-frontpage-view .app-pathbar
 
 .app-page-text
 {
+    font-family: 'Lekton';
+
     max-width: 800px;
     margin: 0 auto;
 }
@@ -18737,6 +18710,17 @@ body.template-frontpage-view .app-pathbar
 .app-page-text h2
 {
     margin-top: 2rem;
+}
+
+.entries
+{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.entry .image-tile
+{
+    display: none;
 }
 
 .app-page-block
@@ -18959,18 +18943,6 @@ body.template-frontpage-view .app-pathbar
 .portaltype-news-item .leadImage
 {
     display: none;
-}
-
-.app-page-title
-{
-    font-size: 1.2rem;
-}
-@media (min-width: 576px)
-{
-    .app-page-title
-    {
-        font-size: 2rem;
-    }
 }
 
 .tileHeadline
@@ -19209,7 +19181,7 @@ body.template-frontpage-view .app-pathbar
 {
     position: relative;
 
-    margin-top: 10rem; 
+    margin-top: 0; 
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
@@ -19245,6 +19217,13 @@ body.template-frontpage-view .app-pathbar
     {
         padding-right: 15px;
         padding-left: 15px;
+    }
+}
+@media (min-width: 576px)
+{
+    .app-main
+    {
+        margin-top: 5rem;
     }
 }
 .app-main-fullscreen
@@ -19431,7 +19410,7 @@ body.template-frontpage-view .app-pathbar
     float: left;
 
     width: 100%;
-    padding: 1rem;
+    padding: 10px;
 }
 
 @media (min-width: 768px)

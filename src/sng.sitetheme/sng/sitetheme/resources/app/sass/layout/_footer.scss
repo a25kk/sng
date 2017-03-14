@@ -1,27 +1,18 @@
 // Footer
 
 .app-footer {
-    margin-top: 1rem;
 }
 
 .app-footer-content {
-    color: $app-gray;
-    font-size: $font-size-sm;
+    color: #000;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 12px;
     margin: 0 auto;
-}
-
-.app-footer-link {
-    color: #fff;
-    &:hover {
-        color: darken(#fff, 6.5%);
-    }
 }
 
 .app-copyright {
     @extend .container;
-    padding: 2rem 1rem;
+    padding: 12px;
     text-transform: uppercase;
     font-weight: 300;
     font-size: .8rem;

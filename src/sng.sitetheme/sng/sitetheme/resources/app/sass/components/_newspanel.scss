@@ -4,10 +4,12 @@
 
 
 .app-news-panel-wrapper {
+    margin-top: 0;
     @include make-container();
     @include make-container-max-widths();
-    margin-top: 10rem;
-
+    @include media-breakpoint-up(sm) {
+        margin-top: 5rem;
+    }
 }
 
 // News listing
