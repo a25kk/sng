@@ -5,6 +5,11 @@
 }
 
 
+.app-teaser-boxes {
+	div:last-child{display: none;}
+}
+
+
 //== Teaser box component
 // Front page teasers aligned in a pseudo random order
 .teaser-box {
