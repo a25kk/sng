@@ -59,7 +59,7 @@
                                         </tal:image>
                                     </a>
                                 </div>
-                                <div class="teaser-box__main">
+                                <span class="teaser-box__main">
                                     <div class="teaser-box__header">
                                         <a class="teaser-box__title" href="${item/getURL}">
                                                 ${item/Title}
@@ -73,7 +73,7 @@
                                             weiterlesen
                                         </a>
                                     </div>
-                                </div>
+                                </span>
                             </div>
                         </tal:teasers>
                     </div>

@@ -7,6 +7,7 @@
 
 .app-teaser-boxes {
 	div:last-child{display: none;}
+	width: 100%;
 }
 
 
@@ -49,9 +50,22 @@
 
 .teaser-box__header {
 	margin-top: 1rem;
+	font-size: 12px;
 }
 .teaser-box__title {
     text-transform: uppercase;
+    font-size: 12px;
+}
+
+.teaser-box__link {
+	&:hover {
+		transition: all 0.5s ease;
+        filter: grayscale(100%);
+	}
+}
+
+.teaser-box__section {
+	font-size: 12px;
 }
 
 

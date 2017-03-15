@@ -19400,6 +19400,10 @@ body.template-frontpage-view .app-pathbar
     }
 }
 
+.app-teaser-boxes
+{
+    width: 100%;
+}
 .app-teaser-boxes div:last-child
 {
     display: none;
@@ -19455,12 +19459,28 @@ body.template-frontpage-view .app-pathbar
 
 .teaser-box__header
 {
+    font-size: 12px; 
+
     margin-top: 1rem;
 }
 
 .teaser-box__title
 {
+    font-size: 12px; 
+
     text-transform: uppercase;
+}
+
+.teaser-box__link:hover
+{
+    transition: all .5s ease;
+
+    filter: grayscale(100%);
+}
+
+.teaser-box__section
+{
+    font-size: 12px;
 }
 
 .app-intro
