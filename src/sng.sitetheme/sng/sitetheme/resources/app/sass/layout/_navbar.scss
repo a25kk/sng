@@ -3,8 +3,7 @@
 // -----------------------------------------
 
 .app-navbar {
-    @include make-container();
-    @include make-container-max-widths();
+    width: 100%;
     @extend .navbar;
     line-height: ($spacer / 2);
     padding-left: 0 !important;
