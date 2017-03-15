@@ -19475,7 +19475,9 @@ body.template-frontpage-view .app-pathbar
 {
     transition: all .5s ease;
 
+    filter: gray;
     filter: grayscale(100%);
+    filter: url(desaturate.svg#greyscale);
 }
 
 .teaser-box__section
