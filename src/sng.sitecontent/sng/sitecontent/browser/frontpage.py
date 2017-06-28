@@ -43,7 +43,7 @@ class FrontPageView(BrowserView):
             review_state='published',
             sort_on='Date',
             sort_order='reverse',
-            sort_limit=10)
+            sort_limit=20)
         return items
 
     def can_edit(self):
@@ -62,7 +62,7 @@ class FrontPageView(BrowserView):
                         review_state='published',
                         sort_on='Date',
                         sort_order='reverse',
-                        sort_limit=10)[:10]
+                        sort_limit=20)[:20]
         return IContentListing(items)
 
     def section_preview(self, section):
