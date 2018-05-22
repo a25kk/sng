@@ -16207,6 +16207,11 @@ div.riform .label
     display: block;
 }
 
+iframe
+{
+    border: none;
+}
+
 .app-default
 {
     color: #999;
