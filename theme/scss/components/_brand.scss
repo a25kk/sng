@@ -1,0 +1,56 @@
+//
+// Brand
+// -----------------------------------------
+
+
+// Make a gridrow
+.app-brand {
+    width: 100%;
+    &-panel-inverse {
+        width: 100%;
+    }
+
+}
+
+//** Inline svg logo
+.app-brand-img {
+    display: block;
+    width: 100%;
+}
+
+.app-brandname-logo {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    color: #000;
+    @include media-breakpoint-up(sm) {
+        margin: 0;
+    }
+}
+
+// The actual brandname/title
+.app-brand-title {
+    //@include make-md-column(8);
+}
+
+.app-brandname {
+    display: block;
+    padding: 0;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 1.25;
+    color: $app-primary;
+    text-transform: uppercase;
+}
+
+// Sitewide claim
+.app-brand-aside {
+    @include make-col(12);
+    @include make-col(4);
+}
+
+.app-logo-mobile {
+    padding: $spacer $spacer 0 $spacer;
+}
