@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+    name="sng.sitetheme"
+    interface="sng.sitetheme.interfaces.ISngSiteThemeLayer"
+  />
+</layers>

@@ -1,0 +1,20 @@
+// Footer
+
+.app-footer {
+}
+
+.app-footer-content {
+    color: #000;
+    font-weight: 300;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.app-copyright {
+    @extend .container;
+    padding: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: .8rem;
+    text-align: center;
+}

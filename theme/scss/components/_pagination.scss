@@ -1,0 +1,34 @@
+//
+// Pagination
+// -----------------------------------------
+
+.pagination {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: $app-gray-light;
+        @include when-inside('.template-folder_contents') {
+        background-color: transparent;
+    }
+
+
+    ul {
+        margin-bottom: 0;
+    }
+    li {
+        display: inline;
+    }
+    .active {
+        font-weight: 700;
+        span:after  {
+            content: "]";
+            display: inline;
+            color: $app-primary;
+        }
+        span:before {
+            content: "[";
+            display: inline;
+            color: $app-primary;
+        }
+    }
+}
