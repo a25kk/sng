@@ -6,12 +6,12 @@
     //height: 210px;
     overflow: shown;
     margin-bottom: 1rem;
-        //@include media-breakpoint-up(md) {
-        //    height: 340px;
-        //}
-        //@include media-breakpoint-up(lg) {
-        //    height: 592px;
-        //}
+        @include media-breakpoint-up(md) {
+            height: 340px;
+        }
+        @include media-breakpoint-up(lg) {
+            height: 100vh;
+        }
         .flickity-page-dots {
             display: none;
         }   
@@ -41,9 +41,9 @@
         @include media-breakpoint-up(md) {
             height: 340px;
         }
-        //@include media-breakpoint-up(lg) {
-        //    height: 592px;
-        //}
+        @include media-breakpoint-up(lg) {
+            height: 100vh;
+        }
         img {
             width: 100%;
         }
