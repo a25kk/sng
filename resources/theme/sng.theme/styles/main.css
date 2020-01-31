@@ -19345,6 +19345,18 @@ img[data-sizes="auto"] {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 768px) {
+  .app-gallery {
+    height: 340px;
+  }
+}
+
+@media (min-width: 992px) {
+  .app-gallery {
+    height: 100vh;
+  }
+}
+
 .app-gallery .flickity-page-dots {
   display: none;
 }
@@ -19378,6 +19390,12 @@ img[data-sizes="auto"] {
 @media (min-width: 768px) {
   .app-gallery-cell {
     height: 340px;
+  }
+}
+
+@media (min-width: 992px) {
+  .app-gallery-cell {
+    height: 100vh;
   }
 }
 
